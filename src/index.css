@@ -1,13 +1,125 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.load{
+  animation: slide 2s
+}
+.slider{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  animation: slide 30s infinite;
+}
+.content{
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+}
+.header{
+  margin-top: 10%;
+}
+.content h1{
+  font-size: 70px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.content p{
+  font-size: 30px;
+  text-align: center;
+}
+.quote{
+  font-size: 30px;
+}
+#button{
+  margin-top: 20px;
+  padding: 16px;
+}
+.card{
+  margin-top: 15%;
+  text-align: center;
+  width: 70%;
+  background-color: rgba(0,0,0,0.2);
+  color: white;
+}
+.footer{
+  height: 2vh;
+  width: 100%;
+  background: white;
+  
+  
+}
+.footer a{
+  color: black;
+  text-decoration: none;
+  font-size: 32px;
+}
+.footer .icon:hover{
+  transform: scale(1.2, 1.2);
+}
+@media screen and (max-width:768px){
+  .header{
+    margin-top: 5%;
+  }
+  .card{
+    margin-top: 10%;
+    width: 90%;
+  }
+  #button{
+    width: 80%;
+    margin-top: 10px;
+  }
+}
+@keyframes slide{
+  0%{
+    background-image: url("./assets/img/image0.jpg");
+  }
+  10%{
+    background-image: url("./assets/img/image0.jpg");
+  }
+  10.01%{
+    background-image: url("./assets/img/image1.jpg");
+  }
+  20%{
+    background-image: url("./assets/img/image1.jpg");
+  }
+  20.01%{
+    background-image: url("./assets/img/image2.jpg");
+  }
+  40%{
+    background-image: url("./assets/img/image2.jpg");
+  }
+  40.01%{
+    background-image: url("./assets/img/image3.jpg");
+  }
+  50%{
+    background-image: url("./assets/img/image3.jpg");
+  }
+  50.01%{
+    background-image: url("./assets/img/image4.jpg");
+  }
+  60%{
+    background-image: url("./assets/img/image4.jpg");
+  }
+  60.01%{
+    background-image: url("./assets/img/image5.jpg");
+  }
+  80%{
+    background-image: url("./assets/img/image5.jpg");
+  }
+  80.01%{
+    background-image: url("./assets/img/image6.jpg");
+  }
+  90%{
+    background-image: url("./assets/img/image6.jpg");
+  }
+  90.01%{
+    background-image: url("./assets/img/image7.jpg");
+  }
+  100%{
+    background-image: url("./assets/img/image7.jpg");
+  }
 }
